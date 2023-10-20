@@ -1,0 +1,12 @@
+version: '3'
+services:
+  jupyter-notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+      - ./RESULTS_FOLDER:/app/RESULTS_FOLDER
+      - ./UPLOAD_FOLDER:/app/UPLOAD_FOLDER
