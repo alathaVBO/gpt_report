@@ -2,7 +2,8 @@
 
 c = get_config()  #noqa
 
-c.NotebookApp.password = u'sha1:5d8ecdfb35bc41a6355b0d7b8897d60eedf5eafa'
+c.NotebookApp.token = 'chatgpt'
+
 
 c.NotebookApp.allow_origin = '*' # allow all origins
 

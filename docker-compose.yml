@@ -7,6 +7,11 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - .:/app
-      - ./RESULTS_FOLDER:/app/RESULTS_FOLDER
-      - ./UPLOAD_FOLDER:/app/UPLOAD_FOLDER
+      - app-volume:/app
+      - results-volume:/app/RESULTS_FOLDER
+      - upload-volume:/app/UPLOAD_FOLDER
+
+volumes:
+  app-volume:
+  results-volume:
+  upload-volume:
