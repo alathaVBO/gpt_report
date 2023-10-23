@@ -10,7 +10,7 @@ services:
       - app-volume:/app
       - results-volume:/app/RESULTS_FOLDER
       - upload-volume:/app/UPLOAD_FOLDER
-
+    restart: always
 volumes:
   app-volume:
   results-volume:
